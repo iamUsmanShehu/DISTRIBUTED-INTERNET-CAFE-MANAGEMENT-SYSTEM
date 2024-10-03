@@ -1,0 +1,38 @@
+body{
+	font-family: tahoma;
+}
+#new_side_navbar{
+/*	background-color: darkgreen;*/
+	font-family: tahoma;
+}
+.dims_head{
+	text-align: center;
+	font-weight: bold;
+	color: #2A3F54;
+	font-size: 30px;
+}
+.count-area-content {
+  text-align: center;
+  background-color: #2A3F54;
+  color: white;
+  border-radius: 20px;
+  padding: 25px 30px 35px 30px;
+}
+
+.percentage .count-digit:after {
+  content: '%';
+  margin-left: 3px;
+}
+
+.count-digit {
+    margin: 5px 0px;
+    color: #f5a425;
+    font-weight: 700;
+    font-size: 36px;
+}
+.count-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.5px;
+}

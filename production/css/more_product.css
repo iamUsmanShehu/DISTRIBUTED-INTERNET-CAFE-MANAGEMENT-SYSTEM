@@ -1,0 +1,69 @@
+#product_item{
+	
+	padding-bottom: 55px;
+}
+#row_content img{
+	height: 270px;
+	width: 100%;
+}
+label{
+	font-size: 20px;
+	font-family: tahoma;
+	font-weight: bold;
+	color: #2A3F54;
+}
+p{
+	font-size: 14px;
+}
+.visit{
+	color: white;
+}
+.visit:hover{
+	color: white;
+	text-decoration: none;
+}
+.shop_logo{
+	width: 250px;
+	height: 200px;
+}
+.shop_title{
+	font-color: #2A3F54;
+	font-size: 30px;
+	font-family: tahoma;
+	font-weight: bold;
+}
+#list_element{
+	font-family: tahoma;
+	font-size: 14px;
+}
+.services{
+	font-family: tahoma;
+	font-weight: bold;
+}
+.shop_logo{
+	margin-top: -200px;
+}
+.ceo_picture{
+	border: 3px solid  #2A3F54;
+	border-radius: 10px;
+	margin-left: 10px;
+}
+.ceo_name{
+	font-family: tahoma;
+	font-size: 15px;
+	font-weight: bold;
+	margin-left: 80px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.product_title{
+	font-color: #2A3F54;
+	font-size: 30px;
+	font-family: tahoma;
+	font-weight: bold;
+	margin-top: -20px;
+	margin-bottom: 40px;
+}
+.product_content{
+	margin-bottom: 50px;
+}

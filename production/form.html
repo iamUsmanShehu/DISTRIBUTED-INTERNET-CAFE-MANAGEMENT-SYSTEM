@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Distributed Internet Cafe Management System </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- External CSS for dashboard -->
+    <link rel="stylesheet" type="text/css" href="css\dashboard.css">
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container" id="new_side_navbar">
+        <div class="col-md-3 left_col" id="new_side_navbar">
+          <div class="left_col scroll-view" id="new_side_navbar">
+           <!--  <div class="navbar nav_title" style="border: 0;" id="new_side_navbar">
+              <a href="index.html" class="site_title"> <span> DICMS </span> </a>
+            </div> -->
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/pic.png" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome!</span>
+                <h2>F2 Computer Institute</h2>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <!-- <h3>General</h3> -->
+                <ul class="nav side-menu">
+                  <li><a href="plain_page.html" class="active"><i class="fa fa-home"></i> Home</a>
+                  </li>
+                  <li><a><i class="fa fa-user"></i>Profiles <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="form_wizards.html"><i class="fa fa-user"></i>C.E.O</a></li>
+                      <li><a href="form_wizards.html"><i class="fa fa-edit"></i>Company/Shop</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="val_acc.html"><i class="fa fa-money"></i>Validate Account</a></li>
+                  <li><a><i class="fa fa-folder-open"></i>Product <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="a_p.html"><i class="fa fa-plus"></i>Add Product</a></li>
+                      <li><a href="projects.html"><i class="fa fa-edit"></i>Manage Product</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="chanage_password.html"><i class="fa fa-pencil"></i> Change Password</a></li>
+                  <li><a href="report.html"><i class="fa fa-envelope-o"></i> Report</a></li>
+                  <li><a href="index.html"><i class="fa fa-sign-out pull-left"></i> Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+            <div class="nav_menu">
+                <div class="nav toggle">
+                  <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                </div>
+                <nav class="nav navbar-nav">
+                <ul class=" navbar-right">
+                  <li class="nav-item dropdown open" style="padding-left: 15px;">
+                    <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                      <img src="images/pic.png" alt="">Abubakar Usman
+                    </a>
+                    <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item"  href="javascript:;"> Profile</a>
+                        <a class="dropdown-item"  href="javascript:;">
+                          <span class="badge bg-red pull-right">50%</span>
+                          <span>Settings</span>
+                        </a>
+                    <a class="dropdown-item"  href="javascript:;">Help</a>
+                      <a class="dropdown-item"  href="index.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                    </div>
+                  </li>
+                  <li role="presentation" class="nav-item dropdown open">
+                    <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false">
+                      <i class="fa fa-envelope-o"></i>
+                      <span class="badge bg-green">6</span>
+                    </a>
+                    <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/pic.png" alt="Profile Image" /></span>
+                          <span>
+                            <span>Abubakar Usman</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/pic.png" alt="Profile Image" /></span>
+                          <span>
+                            <span>Abubakar Usman</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/pic.png" alt="Profile Image" /></span>
+                          <span>
+                            <span>Abubakar Usman</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <div class="text-center">
+                          <a class="dropdown-item">
+                            <strong>See All Alerts</strong>
+                            <i class="fa fa-angle-right"></i>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                    <li class="nav-item">
+                    <a href="javascript:;" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false">      
+                      </a>
+                    </li>
+                  </li>
+                  <strong> Status: <label class="badge badge-info"><i> Verified </i> </strong> 
+                </ul>
+              </nav>
+            </div>
+          </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="row">
+
+              <div class="col-md-12 col-sm-12 ">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2 class="dims_head">Company C.E.O Profile</h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <!-- Smart Wizard -->
+                    <div id="wizard" class="form_wizard wizard_horizontal">
+                      <ul class="wizard_steps">
+                        <li>
+                          <a href="#step-1">
+                            <span class="step_no">1</span>
+                            <span class="step_descr">
+                                Step 1<br />
+                                <small>Personal Information</small>
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#step-2">
+                            <span class="step_no">2</span>
+                            <span class="step_descr">
+                                Step 2<br />
+                                <small>Contact Information</small>
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#step-3">
+                            <span class="step_no">3</span>
+                            <span class="step_descr">
+                                Step 3<br />
+                                <small>Residential Address</small>
+                            </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#step-4">
+                            <span class="step_no">4</span>
+                            <span class="step_descr">
+                                Step 4<br />
+                                <small>Means of Identification</small>
+                            </span>
+                          </a>
+                        </li>
+                      </ul><hr>
+                      <div id="step-1">
+                        <form method="POST" action="h.php"class="form-horizontal form-label-left">
+
+                          <div class="field item form-group">
+                              <label class="col-form-label col-md-3 col-sm-3  label-align">First Name<span class="required">*</span></label>
+                              <div class="col-md-6 col-sm-6">
+                                  <input class="form-control" name="name" required="required" />
+                              </div>
+                          </div>
+                          <div class="field item form-group">
+                              <label class="col-form-label col-md-3 col-sm-3  label-align">Last Name<span class="required">*</span></label>
+                              <div class="col-md-6 col-sm-6">
+                                  <input class="form-control" name="name" required="required" />
+                              </div>
+                          </div>
+                          <div class="field item form-group">
+                              <label class="col-form-label col-md-3 col-sm-3  label-align">Middle Name<span></span></label>
+                              <div class="col-md-6 col-sm-6">
+                                  <input class="form-control" name="name" required="required" />
+                              </div>
+                          </div>
+                          <div class="field item form-group">
+                              <label class="col-form-label col-md-3 col-sm-3  label-align">Gender<span class="required">*</span></label>
+                              <div class="col-md-6 col-sm-6">
+                                  <select class="form-control" class='date' type="Gender">
+                                      <option>Select Gender</option>
+                                      <option name="male">Male</option>
+                                      <option name="female">Female</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="field item form-group">
+                              <label class="col-form-label col-md-3 col-sm-3  label-align">Passport<span class="required">*</span></label>
+                              <div class="col-md-6 col-sm-6">
+                                  <input class="form-control" type="file" class='file' name="passport" required='required'>
+                              </div>
+                          </div>
+                          <div class="field item form-group">
+                              <label class="col-form-label col-md-3 col-sm-3  label-align">Date<span class="required">*</span></label>
+                              <div class="col-md-6 col-sm-6">
+                                  <input class="form-control" class='date' type="date" name="date" required='required'>
+                              </div>
+                          </div>
+                        
+
+                      </div>
+                      <div id="step-2">
+                        
+                        <p>
+                        <div class="field item form-group">
+                            <label class="col-form-label col-md-3 col-sm-3  label-align">email<span class="required">*</span></label>
+                            <div class="col-md-6 col-sm-6">
+                                <input class="form-control" name="email" class='email' required="required" type="email" /></div>
+                        </div>
+                        <div class="field item form-group">
+                            <label class="col-form-label col-md-3 col-sm-3  label-align">Confirm email address<span class="required">*</span></label>
+                            <div class="col-md-6 col-sm-6">
+                                <input class="form-control" type="email" class='email' name="confirm_email" data-validate-linked='email' required='required' /></div>
+                        </div>
+                        <div class="field item form-group">
+                            <label class="col-form-label col-md-3 col-sm-3  label-align">Phone Number <span class="required">*</span></label>
+                            <div class="col-md-6 col-sm-6">
+                                <input class="form-control" type="number" class='number' name="number" data-validate-minmax="10,100" required='required'></div>
+                        </div>
+                        <div class="field item form-group">
+                            <label class="col-form-label col-md-3 col-sm-3  label-align">Address<span class="required">*</span></label>
+                            <div class="col-md-6 col-sm-6">
+                                <input class="form-control" name="address" required="required" />
+                            </div>
+                        </div>
+                        </p>
+                        
+                      </div>
+                      <div id="step-3">
+                        
+                        <p>
+                          <div class="field item form-group">
+                              <label class="col-form-label col-md-3 col-sm-3  label-align">State of Origin<span class="required">*</span></label>
+                              <div class="col-md-6 col-sm-6">
+                                  <select class="form-control" class='state' type="Gender">
+                                      <option>Select State</option>
+                                      <option name="">FCT Abuja</option>
+                                      <option name="">Abia</option>
+                                      <option name="">Adamawa</option>
+                                      <option name="">Akwa-Ibom</option>
+                                      <option name="">Anambra</option>
+                                      <option name="">Bauchi</option>
+                                      <option name="">Bayelsa</option>
+                                      <option name="">Benue</option>
+                                      <option name="">Borno</option>
+                                      <option name="">Cross-River</option>
+                                      <option name="">Delta</option>
+                                      <option name="">Ebonyi</option>
+                                      <option name="">Edo</option>
+                                      <option name="">Ekiti</option>
+                                      <option name="">Enugu</option>
+                                      <option name="">Gombe</option>
+                                      <option name="">Jigawa</option>
+                                      <option name="">Kaduna</option>
+                                      <option name="">Kano</option>
+                                      <option name="">Katsina</option>
+                                      <option name="">Kebbi</option>
+                                      <option name="">Kogi</option>
+                                      <option name="">Kwara</option>
+                                      <option name="">Lagos</option>
+                                      <option name="">Nassarawa</option>
+                                      <option name="">Niger</option>
+                                      <option name="">Ogun</option>
+                                      <option name="">Ondo</option>
+                                      <option name="">Osun</option>
+                                      <option name="">Oyo</option>
+                                      <option name="">Plateau</option>
+                                      <option name="">Rivers</option>
+                                      <option name="">Sokoto</option>
+                                      <option name="">Taraba</option>
+                                      <option name="">Yobe</option>
+                                      <option name="">Zamfara</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="field item form-group">
+                              <label class="col-form-label col-md-3 col-sm-3  label-align">State of Origin<span class="required">*</span></label>
+                              <div class="col-md-6 col-sm-6">
+                                  <select class="form-control" class='lga' type="Gender">
+                                      <option>Select LGA</option>
+                                      <option name=""> --- </option>
+                                      <option name=""> --- </option>
+                                      <option name=""> --- </option>
+                                  </select>
+                              </div>
+                          </div>
+                        </p>
+                        
+                      </div>
+                      <div id="step-4">
+                        
+                        <p>
+                          <div class="field item form-group">
+                            <label class="col-form-label col-md-3 col-sm-3  label-align">Means of Identification<span class="required">*</span></label>
+                            <div class="col-md-6 col-sm-6">
+                                <select class="form-control" class='' type="means of identification" required="required" />
+                                    <option>Select means of Identification</option>
+                                    <option>National ID card</option>
+                                    <option>Driving License</option>
+                                    <option>International Passport</option>
+                                    <option>Voters Card</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="field item form-group">
+                            <label class="col-form-label col-md-3 col-sm-3  label-align">Upload Means of Identification <span class="required">*</span></label>
+                            <div class="col-md-6 col-sm-6">
+                                <input class="form-control" type="file" class='file' name="means of identification" required='required'></div>
+                        </div>
+                        </p>
+                        
+                        <button type='submit' class="btn btn-success">Submit</button>
+                      </div>
+                      </form>
+                    </div>
+          
+                    <!-- End SmartWizard Content -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+   <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- jQuery Smart Wizard -->
+    <script src="../vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+	
+  </body>
+</html>

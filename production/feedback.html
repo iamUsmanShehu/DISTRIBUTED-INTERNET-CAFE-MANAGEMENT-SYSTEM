@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Distributed Internet Cafe Management System </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- External CSS for dashboard -->
+    <link rel="stylesheet" type="text/css" href="css\dashboard.css">
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container" id="new_side_navbar">
+        <div class="col-md-3 left_col" id="new_side_navbar">
+          <div class="left_col scroll-view" id="new_side_navbar">
+           <!--  <div class="navbar nav_title" style="border: 0;" id="new_side_navbar">
+              <a href="index.html" class="site_title"> <span> DICMS </span> </a>
+            </div> -->
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/pic.png" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome!</span>
+                <!-- <h2>Admin Dashboard</h2> -->
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <!-- <h3>General</h3> -->
+                <ul class="nav side-menu">
+                  <li><a href="admin.html" class="active"><i class="fa fa-home"></i> Dashboard</a>
+                  </li>
+                  <li><a href="change_password.html"><i class="fa fa-pencil"></i> Change Password</a></li>
+                  <li><a href="feedback.html"><i class="fa fa-envelope-o"></i> Feedback</a></li>
+                  <li><a href="index.html"><i class="fa fa-sign-out pull-left"></i> Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+            <div class="nav_menu">
+                <div class="nav toggle">
+                  <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                </div>
+                <nav class="nav navbar-nav">
+                <ul class=" navbar-right">
+                  <li class="nav-item dropdown open" style="padding-left: 15px;">
+                    <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                      <img src="images/pic.png" alt="">Admin
+                    </a>
+                    <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item"  href="javascript:;"> Profile</a>
+                        <a class="dropdown-item"  href="javascript:;">
+                          <span class="badge bg-red pull-right">50%</span>
+                          <span>Settings</span>
+                        </a>
+                    <a class="dropdown-item"  href="javascript:;">Help</a>
+                      <a class="dropdown-item"  href="index.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                    </div>
+                  </li>
+                  <li role="presentation" class="nav-item dropdown open">
+                    <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false">
+                      <i class="fa fa-envelope-o"></i>
+                      <span class="badge bg-green">6</span>
+                    </a>
+                    <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/pic.png" alt="Profile Image" /></span>
+                          <span>
+                            <span>F2 Computer Institute</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/pic.png" alt="Profile Image" /></span>
+                          <span>
+                            <span>Royal Computer Institute</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/pic.png" alt="Profile Image" /></span>
+                          <span>
+                            <span>SIS Computer Institute</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <div class="text-center">
+                          <a class="dropdown-item">
+                            <strong>See All Alerts</strong>
+                            <i class="fa fa-angle-right"></i>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                    <li class="nav-item">
+                      <a href="javascript:;" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false">      
+                      </a>
+                    </li>
+                  </li>
+                  <!-- <strong> Status: <label class="badge badge-info"><i> Verified </i> </strong>  -->
+                </ul>
+              </nav>
+            </div>
+          </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+            <div class="right_col" role="main">
+                <div class="">
+                    <div class="clearfix"></div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="x_panel">
+                                <div class="x_title">
+                                    <h2 class="dims_head">Feedback</h2>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                    <form class="" action="" method="post" novalidate>
+                                        <div class="field item form-group">
+                                            <label class="col-form-label col-md-3 col-sm-3  label-align">Title<span class="required">*</span></label>
+                                            <div class="col-md-6 col-sm-6">
+                                                <input class="form-control" type="text" name="title" required />
+                                            </div>
+                                        </div>
+                                        <div class="field item form-group">
+                                            <label class="col-form-label col-md-3 col-sm-3  label-align">Message<span class="required">*</span></label>
+                                            <div class="col-md-6 col-sm-6">
+                                                <textarea class="form-control" rows="5" placeholder="Type Your message here..."></textarea>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="ln_solid">
+                                            <div class="form-group">
+                                                <div class="col-md-6 offset-md-3">
+                                                    <button type='submit' class="btn btn-success">Submit</button>
+                                                    <button type='reset' class="btn btn-danger">Reset</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /page content -->
+
+
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            <p>copyright &copy;DICMS 2024</p>
+            <!-- <p>Distributed Internet Cafe Management System</p> -->
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+   <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+  </body>
+</html>
