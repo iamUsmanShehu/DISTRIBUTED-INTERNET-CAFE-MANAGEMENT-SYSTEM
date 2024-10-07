@@ -19,6 +19,7 @@
                   </div>
                 </li>
                 <?php
+                $ceo_id = $_SESSION['user_id'];
                   $sql = "SELECT `id`, `ceo_id`, `name`, `motto`, `address`, `email`, `phone_number`, `rc_number`, `verify`, `logo`, `banner`, `created_at` FROM `shop_profiles`WHERE ceo_id = $ceo_id";
                   $result = $conn->query($sql);
 
@@ -35,9 +36,14 @@
                         if ($verify == 2) {
                           $verify = '<label class="badge badge-danger">Suspended';
                         }
+                         
                   }
                 ?>
-                <strong>Status: <i><?=$verify?></i></strong>
+                <strong>Status:<i>
+                  <?php if (isset($verify)) {
+                    echo $verify;
+                  }else{echo '<label class="badge badge-default">No Shop Created';}
+                ?></i></strong>
               </ul>
             </nav>
           </div>

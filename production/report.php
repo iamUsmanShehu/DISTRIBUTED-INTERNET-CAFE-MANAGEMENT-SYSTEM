@@ -144,9 +144,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <div class="col-md-8 col-sm-8">
                           <h2>History</h2>
                           <?php
-
+                            $user_id = $_SESSION['user_id'];
                             // Fetch all messages
-                            $query = "SELECT id, user_id, title, message, created_at FROM messages WHERE 1";
+                            $query = "SELECT id, user_id, title, message, created_at FROM messages WHERE user_id = $user_id";
                             $result = mysqli_query($conn, $query);
 
                             // Check if any rows were returned

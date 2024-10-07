@@ -40,6 +40,7 @@ $result_message = $conn->query($sql_message);
                   </li>
                   <li><a><i class="fa fa-area-chart"></i>System Report <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
+                      <li><a href="summary.php"><i class="fa fa-file"></i>Summery</a></li>
                       <li><a href="registered-account.php"><i class="fa fa-plus"></i>Clients</a></li>
                       <li><a href="verified-account.php"><i class="fa fa-unlock"></i>Verified Account</a></li>
                       <li><a href="pending-account.php"><i class="fa fa-edit"></i>Pending Account</a></li>

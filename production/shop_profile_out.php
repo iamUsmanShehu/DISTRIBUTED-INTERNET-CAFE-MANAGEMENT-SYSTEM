@@ -13,7 +13,10 @@ if ($conn->connect_error) {
 }
 
 // Fetch products for shop_id=2
-$shop_id = 2;
+if (isset($_GET['shop_id'])) {
+ $shop_id = $_GET['shop_id'];
+}
+
 $productQuery = "SELECT id, name, description, image, shop_id, ceo_id, created_at FROM products WHERE shop_id=$shop_id";
 $productResult = $conn->query($productQuery);
 

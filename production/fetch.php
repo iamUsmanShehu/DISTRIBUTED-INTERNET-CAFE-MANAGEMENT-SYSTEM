@@ -21,7 +21,26 @@ $total_products = "SELECT COUNT(id) AS 'Total' FROM `products`";
       $products_total = $total['Total'];
   }
 
+$total_ceo = "SELECT COUNT(id) AS 'Total' FROM `ceo_profiles`";
+  $ceo_stmt = $conn->prepare($total_ceo);
+  $ceo_stmt->execute();
+  $ceo_result = $ceo_stmt->get_result();
+  
+  if ($ceo_result->num_rows > 0) {
+      $total = $ceo_result->fetch_assoc();
+      $ceo_total = $total['Total'];
+  }
 
+$total_payment = "SELECT COUNT(id) AS 'Total' FROM `payments`";
+  $payment_stmt = $conn->prepare($total_payment);
+  $payment_stmt->execute();
+  $payment_result = $payment_stmt->get_result();
+  
+  if ($payment_result->num_rows > 0) {
+      $total = $payment_result->fetch_assoc();
+      $payment_total = $total['Total'];
+      $payment_total = number_format(10000 * $payment_total, 2);
+  }
 
 $total_shop_registered = "SELECT COUNT(id) AS 'Total' FROM `shop_profiles`";
   $shop_registered_stmt = $conn->prepare($total_shop_registered);
